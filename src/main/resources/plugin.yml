@@ -1,0 +1,31 @@
+name: Wolf-plugin
+version: '${project.version}'
+main: org.mcplugin.wolf.WolfPlugin
+api-version: '1.21'
+commands:
+  fly:
+    description: 'Toggles flying for players'
+    usage: '/fly'
+    permission: fly
+    permission-message: 'You do not have permission to use this command!'
+  setspawn:
+    description: 'Sets the spawn point for the server'
+    usage: '/setSpawn'
+    permission: setSpawnPoint
+    permission-message: 'You do not have permission to use this command!'
+  spawn:
+    description: 'Teleports you to the spawn point'
+    usage: '/spawn'
+    permission-message: 'You do not have permission to use this command!'
+  setHome:
+    description: 'Sets a home for the player'
+    usage: '/setHome <homeName>'
+    permission-message: 'You do not have permission to use this command!'
+  home:
+    description: 'Teleports you to a home'
+    usage: '/home <homeName>'
+    permission-message: 'You do not have permission to use this command!'
+  delHome:
+    description: 'Deletes a home for the player'
+    usage: '/delHome <homeName>'
+    permission-message: 'You do not have permission to use this command!'
